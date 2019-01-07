@@ -20,7 +20,8 @@ class Login: UIViewController,GCDAsyncUdpSocketDelegate, GCDAsyncSocketDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.strokeColor: UIColor.red]
        
     }
     
@@ -29,7 +30,7 @@ class Login: UIViewController,GCDAsyncUdpSocketDelegate, GCDAsyncSocketDelegate 
         _ = view
         let gradient:CAGradientLayer = CAGradientLayer()
         gradient.frame.size = self.view.frame.size
-        gradient.colors = [UIColor.black.withAlphaComponent(0.3),UIColor.clear.withAlphaComponent(0.5).cgColor] //Or any colors
+        gradient.colors = [UIColor.black.withAlphaComponent(1.0),UIColor.clear.withAlphaComponent(1.0).cgColor] //Or any colors
         self.view.layer.addSublayer(gradient)
         
     }

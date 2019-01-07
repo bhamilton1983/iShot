@@ -107,10 +107,11 @@ class LoginTable: UIViewController, UITableViewDataSource,UITableViewDelegate,Ne
                         track_Button.layer.cornerRadius = 8
                         track_Button.layer.backgroundColor = #colorLiteral(red: 0.9279846549, green: 0.0148168318, blue: 0.0004645651497, alpha: 1)
                         track_Button.setTitle("Live View", for: UIControl.State.normal)
-                        track_Button.frame = CGRect(x: self.view.frame.size.width - 140, y: 90, width: 120, height: 30)
+                        track_Button.frame = CGRect(x: 300, y: 60, width: 120, height: 50)
                                 track_Button.addTarget(self, action: #selector(self.track_Button_Pressed(sender:)), for: UIControl.Event.touchDown)
                                 track_Button.addTarget(self, action: #selector(self.tapped), for: .touchUpInside)
                                 track_Button.tag = index.row
+                            track_Button.blink()
                                 cell.addSubview(track_Button)
                             let recordingButton = UIButton()
                             recordingButton.addTarget(self, action: #selector(self.recordingButtonPressed(sender:)), for: UIControl.Event.touchDown)
@@ -132,7 +133,7 @@ class LoginTable: UIViewController, UITableViewDataSource,UITableViewDelegate,Ne
                               settingButton.layer.cornerRadius = 8
                             settingButton.layer.backgroundColor = #colorLiteral(red: 0.9279846549, green: 0.0148168318, blue: 0.0004645651497, alpha: 1)
                             settingButton.setTitle("Settings", for: UIControl.State.normal)
-                            settingButton.frame = CGRect(x: self.view.frame.size.width - 140, y: 40, width: 120, height: 30)
+                        //    settingButton.frame = CGRect(x: 150, y: 40, width: 120, height: 30)
                             cell.firstSub.layer.borderWidth = 2.0
                             cell.firstSub.layer.cornerRadius = 8
                             cell.firstSub.layer.borderColor = UIColor.white.cgColor
@@ -200,9 +201,9 @@ class LoginTable: UIViewController, UITableViewDataSource,UITableViewDelegate,Ne
                                     let name = "\(CameraName[index.row])"
                                     Login.ip = self.OnvifArray[index.row]
                                     self.setRTSP(type: name)
-                                 //   print(Login.rtsp)
+                                    print(Login.rtsp)
             
-                                  
+            
                                     performSegue(withIdentifier: "main", sender: self)
             
                                     self.tableView.reloadData()

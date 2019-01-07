@@ -27,6 +27,10 @@
 		4ECC149321DFB61300198070 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC149221DFB61300198070 /* Extension_String.swift */; };
 		4ECC149521DFB62F00198070 /* Z3ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC149421DFB62F00198070 /* Z3ZoomViewController.swift */; };
 		4ECC149721DFB71800198070 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC149621DFB71800198070 /* LoadingView.swift */; };
+		4EE2353921E3832E00638E98 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2353821E3832E00638E98 /* MainVC.swift */; };
+		4EE2353C21E3898D00638E98 /* CamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2353A21E3898D00638E98 /* CamController.swift */; };
+		4EE2353D21E3898D00638E98 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2353B21E3898D00638E98 /* InfoController.swift */; };
+		4EE2353F21E38A1600638E98 /* BottomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2353E21E38A1600638E98 /* BottomController.swift */; };
 		D311C80D21E11A8200939042 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311C80B21E11A8200939042 /* Login.swift */; };
 		D311C80E21E11A8200939042 /* LoginTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311C80C21E11A8200939042 /* LoginTable.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +60,10 @@
 		4ECC149221DFB61300198070 /* Extension_String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
 		4ECC149421DFB62F00198070 /* Z3ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Z3ZoomViewController.swift; sourceTree = "<group>"; };
 		4ECC149621DFB71800198070 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4EE2353821E3832E00638E98 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4EE2353A21E3898D00638E98 /* CamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamController.swift; sourceTree = "<group>"; };
+		4EE2353B21E3898D00638E98 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		4EE2353E21E38A1600638E98 /* BottomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomController.swift; sourceTree = "<group>"; };
 		CC6DA7A419D1BB18520B8B38 /* Pods-iShot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShot/Pods-iShot.debug.xcconfig"; sourceTree = "<group>"; };
 		D206C655E57F4C06CBF3B46E /* Pods-iShot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShot.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShot/Pods-iShot.release.xcconfig"; sourceTree = "<group>"; };
 		D311C80B21E11A8200939042 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = iShot/Login.swift; sourceTree = SOURCE_ROOT; };
@@ -99,8 +107,10 @@
 		4E68B94D21DFAAD900BE9BAB /* iShot */ = {
 			isa = PBXGroup;
 			children = (
+				4EE2353E21E38A1600638E98 /* BottomController.swift */,
 				4E68B94E21DFAAD900BE9BAB /* AppDelegate.swift */,
 				4E68B95221DFAAD900BE9BAB /* Main.storyboard */,
+				4EE2353821E3832E00638E98 /* MainVC.swift */,
 				4E68B95521DFAADA00BE9BAB /* Assets.xcassets */,
 				4E68B95721DFAADA00BE9BAB /* LaunchScreen.storyboard */,
 				4E68B95A21DFAADA00BE9BAB /* Info.plist */,
@@ -111,6 +121,8 @@
 		4ECC148D21DFB53A00198070 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4EE2353A21E3898D00638E98 /* CamController.swift */,
+				4EE2353B21E3898D00638E98 /* InfoController.swift */,
 				D311C80B21E11A8200939042 /* Login.swift */,
 				D311C80C21E11A8200939042 /* LoginTable.swift */,
 				4ECC149421DFB62F00198070 /* Z3ZoomViewController.swift */,
@@ -273,6 +285,7 @@
 			files = (
 				4E68B97B21DFB4B000BE9BAB /* BasicCommands.swift in Sources */,
 				4ECC148F21DFB57700198070 /* ZoomParser.swift in Sources */,
+				4EE2353D21E3898D00638E98 /* InfoController.swift in Sources */,
 				4E68B96921DFB43600BE9BAB /* CameraClass.swift in Sources */,
 				D311C80E21E11A8200939042 /* LoginTable.swift in Sources */,
 				4E68B97521DFB48100BE9BAB /* H264.swift in Sources */,
@@ -282,10 +295,13 @@
 				4ECC149321DFB61300198070 /* Extension_String.swift in Sources */,
 				4E68B97921DFB49200BE9BAB /* VideoInput Class.swift in Sources */,
 				4E68B94F21DFAAD900BE9BAB /* AppDelegate.swift in Sources */,
+				4EE2353C21E3898D00638E98 /* CamController.swift in Sources */,
 				4E68B96D21DFB44A00BE9BAB /* HttpService.swift in Sources */,
+				4EE2353921E3832E00638E98 /* MainVC.swift in Sources */,
 				4E68B97021DFB45900BE9BAB /* z3Camera.swift in Sources */,
 				4E68B97321DFB47800BE9BAB /* Sensor Class.swift in Sources */,
 				4ECC149521DFB62F00198070 /* Z3ZoomViewController.swift in Sources */,
+				4EE2353F21E38A1600638E98 /* BottomController.swift in Sources */,
 				D311C80D21E11A8200939042 /* Login.swift in Sources */,
 				4E68B97721DFB48800BE9BAB /* Global Variables.swift in Sources */,
 				4ECC149721DFB71800198070 /* LoadingView.swift in Sources */,
