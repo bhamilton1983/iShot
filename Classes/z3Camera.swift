@@ -119,49 +119,7 @@ class zCamera: NSObject, URLSessionDelegate, XMLParserDelegate {
         task.resume()
         
     }
-    func z3RTSP() {
-        
-        
 
-        let credential = URLCredential(
-            user: "",
-            password: "",
-            persistence: .forSession
-        )
-        let protectionSpace = URLProtectionSpace(
-            host: "10.220.45.135",
-            port: 554,
-            protocol: "RTSP",
-            realm: nil,
-            authenticationMethod: NSURLAuthenticationMethodHTTPBasic
-        )
-        URLCredentialStorage.shared.setDefaultCredential(credential, for: protectionSpace)
-        let session = URLSession.shared
-        let scheme = URLResourceKey("RTSP")
-       
-        var url = URL(string: "rtsp://10.220.45.135/z3-1.sdp")
-        var theRequest = URLRequest(url: url! as URL)
-        theRequest.addValue("3", forHTTPHeaderField: "CSeq:")
-        theRequest.addValue("application/sdp", forHTTPHeaderField: "Accept:")
-        theRequest.httpMethod = "DESCRIBE"
-        theRequest.httpShouldUsePipelining = true
-        theRequest.httpShouldHandleCookies = true
-        let task = session.dataTask(with: theRequest) { (data: Data?, response: URLResponse?, error: Error?) in
-            
-            if error != nil
-            {
-                print("error=\(String(describing: error))")
-                return
-            }
-            
-        }
-        task.resume()
-        
-        
-        
-       
-
-        }
 
     
  

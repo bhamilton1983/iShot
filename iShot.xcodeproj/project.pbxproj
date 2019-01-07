@@ -13,8 +13,6 @@
 		4E68B95621DFAADA00BE9BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E68B95521DFAADA00BE9BAB /* Assets.xcassets */; };
 		4E68B95921DFAADA00BE9BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E68B95721DFAADA00BE9BAB /* LaunchScreen.storyboard */; };
 		4E68B96221DFAC1100BE9BAB /* vlcWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E68B96121DFAC1100BE9BAB /* vlcWrapper.m */; };
-		4E68B96521DFAEA600BE9BAB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68B96421DFAEA600BE9BAB /* Login.swift */; };
-		4E68B96721DFB3E800BE9BAB /* LoginTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68B96621DFB3E800BE9BAB /* LoginTable.swift */; };
 		4E68B96921DFB43600BE9BAB /* CameraClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68B96821DFB43600BE9BAB /* CameraClass.swift */; };
 		4E68B96D21DFB44A00BE9BAB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68B96C21DFB44A00BE9BAB /* HttpService.swift */; };
 		4E68B97021DFB45900BE9BAB /* z3Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E68B96E21DFB45900BE9BAB /* z3Camera.swift */; };
@@ -29,8 +27,8 @@
 		4ECC149321DFB61300198070 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC149221DFB61300198070 /* Extension_String.swift */; };
 		4ECC149521DFB62F00198070 /* Z3ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC149421DFB62F00198070 /* Z3ZoomViewController.swift */; };
 		4ECC149721DFB71800198070 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC149621DFB71800198070 /* LoadingView.swift */; };
-		4ECC149A21DFBEF100198070 /* IPCellClassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC149821DFBEF100198070 /* IPCellClassTableViewCell.xib */; };
-		4ECC149B21DFBEF100198070 /* IPCellClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC149921DFBEF100198070 /* IPCellClassTableViewCell.swift */; };
+		D311C80D21E11A8200939042 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311C80B21E11A8200939042 /* Login.swift */; };
+		D311C80E21E11A8200939042 /* LoginTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D311C80C21E11A8200939042 /* LoginTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +42,6 @@
 		4E68B96021DFAC1100BE9BAB /* iShot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iShot-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E68B96121DFAC1100BE9BAB /* vlcWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vlcWrapper.m; sourceTree = "<group>"; };
 		4E68B96321DFAC3600BE9BAB /* vlcWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vlcWrapper.h; sourceTree = "<group>"; };
-		4E68B96421DFAEA600BE9BAB /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		4E68B96621DFB3E800BE9BAB /* LoginTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTable.swift; sourceTree = "<group>"; };
 		4E68B96821DFB43600BE9BAB /* CameraClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraClass.swift; sourceTree = "<group>"; };
 		4E68B96C21DFB44A00BE9BAB /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		4E68B96E21DFB45900BE9BAB /* z3Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = z3Camera.swift; sourceTree = "<group>"; };
@@ -60,10 +56,10 @@
 		4ECC149221DFB61300198070 /* Extension_String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
 		4ECC149421DFB62F00198070 /* Z3ZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Z3ZoomViewController.swift; sourceTree = "<group>"; };
 		4ECC149621DFB71800198070 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		4ECC149821DFBEF100198070 /* IPCellClassTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IPCellClassTableViewCell.xib; sourceTree = "<group>"; };
-		4ECC149921DFBEF100198070 /* IPCellClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPCellClassTableViewCell.swift; sourceTree = "<group>"; };
 		CC6DA7A419D1BB18520B8B38 /* Pods-iShot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iShot/Pods-iShot.debug.xcconfig"; sourceTree = "<group>"; };
 		D206C655E57F4C06CBF3B46E /* Pods-iShot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iShot.release.xcconfig"; path = "Pods/Target Support Files/Pods-iShot/Pods-iShot.release.xcconfig"; sourceTree = "<group>"; };
+		D311C80B21E11A8200939042 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = iShot/Login.swift; sourceTree = SOURCE_ROOT; };
+		D311C80C21E11A8200939042 /* LoginTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginTable.swift; path = iShot/LoginTable.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +99,6 @@
 		4E68B94D21DFAAD900BE9BAB /* iShot */ = {
 			isa = PBXGroup;
 			children = (
-				4E68B96421DFAEA600BE9BAB /* Login.swift */,
-				4E68B96621DFB3E800BE9BAB /* LoginTable.swift */,
 				4E68B94E21DFAAD900BE9BAB /* AppDelegate.swift */,
 				4E68B95221DFAAD900BE9BAB /* Main.storyboard */,
 				4E68B95521DFAADA00BE9BAB /* Assets.xcassets */,
@@ -117,8 +111,8 @@
 		4ECC148D21DFB53A00198070 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4ECC149921DFBEF100198070 /* IPCellClassTableViewCell.swift */,
-				4ECC149821DFBEF100198070 /* IPCellClassTableViewCell.xib */,
+				D311C80B21E11A8200939042 /* Login.swift */,
+				D311C80C21E11A8200939042 /* LoginTable.swift */,
 				4ECC149421DFB62F00198070 /* Z3ZoomViewController.swift */,
 				4ECC149221DFB61300198070 /* Extension_String.swift */,
 				4ECC148E21DFB57700198070 /* ZoomParser.swift */,
@@ -218,7 +212,6 @@
 				4E68B95921DFAADA00BE9BAB /* LaunchScreen.storyboard in Resources */,
 				4E68B95621DFAADA00BE9BAB /* Assets.xcassets in Resources */,
 				4E68B95421DFAAD900BE9BAB /* Main.storyboard in Resources */,
-				4ECC149A21DFBEF100198070 /* IPCellClassTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,21 +274,20 @@
 				4E68B97B21DFB4B000BE9BAB /* BasicCommands.swift in Sources */,
 				4ECC148F21DFB57700198070 /* ZoomParser.swift in Sources */,
 				4E68B96921DFB43600BE9BAB /* CameraClass.swift in Sources */,
+				D311C80E21E11A8200939042 /* LoginTable.swift in Sources */,
 				4E68B97521DFB48100BE9BAB /* H264.swift in Sources */,
-				4E68B96721DFB3E800BE9BAB /* LoginTable.swift in Sources */,
 				4E68B96221DFAC1100BE9BAB /* vlcWrapper.m in Sources */,
 				4E68B97121DFB45900BE9BAB /* z3Request.swift in Sources */,
 				4ECC149121DFB5CD00198070 /* ZoomViewController.swift in Sources */,
 				4ECC149321DFB61300198070 /* Extension_String.swift in Sources */,
 				4E68B97921DFB49200BE9BAB /* VideoInput Class.swift in Sources */,
 				4E68B94F21DFAAD900BE9BAB /* AppDelegate.swift in Sources */,
-				4E68B96521DFAEA600BE9BAB /* Login.swift in Sources */,
 				4E68B96D21DFB44A00BE9BAB /* HttpService.swift in Sources */,
 				4E68B97021DFB45900BE9BAB /* z3Camera.swift in Sources */,
 				4E68B97321DFB47800BE9BAB /* Sensor Class.swift in Sources */,
 				4ECC149521DFB62F00198070 /* Z3ZoomViewController.swift in Sources */,
+				D311C80D21E11A8200939042 /* Login.swift in Sources */,
 				4E68B97721DFB48800BE9BAB /* Global Variables.swift in Sources */,
-				4ECC149B21DFBEF100198070 /* IPCellClassTableViewCell.swift in Sources */,
 				4ECC149721DFB71800198070 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

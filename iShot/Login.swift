@@ -24,7 +24,15 @@ class Login: UIViewController,GCDAsyncUdpSocketDelegate, GCDAsyncSocketDelegate 
        
     }
     
-
+    func loginAddGradient(view:UIView) {
+        
+        _ = view
+        let gradient:CAGradientLayer = CAGradientLayer()
+        gradient.frame.size = self.view.frame.size
+        gradient.colors = [UIColor.black.withAlphaComponent(0.3),UIColor.clear.withAlphaComponent(0.5).cgColor] //Or any colors
+        self.view.layer.addSublayer(gradient)
+        
+    }
 
 
 }
