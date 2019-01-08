@@ -450,10 +450,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC6DA7A419D1BB18520B8B38 /* Pods-iShot.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XU436FT9J;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = iShot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,10 +473,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D206C655E57F4C06CBF3B46E /* Pods-iShot.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XU436FT9J;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = iShot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

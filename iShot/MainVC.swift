@@ -19,6 +19,7 @@ class MainVC: UIViewController,VLCMediaPlayerDelegate {
     let pause = UIImage(named: "pause_active_72.jpg")
     let play = UIImage(named: "play_active_72")
   
+    @IBOutlet weak var infoBox: UIView!
     
 
     var path = String()
@@ -30,17 +31,9 @@ class MainVC: UIViewController,VLCMediaPlayerDelegate {
     
     
     @IBAction func test(_ sender: Any) {
-         path = String(documentsDirectory)
-        print(mediaPlayer.brightness)
-        print(mediaPlayer.contrast)
-        print(mediaPlayer.classForCoder)
-        print(mediaPlayer.gamma)
-        print(mediaPlayer.hue)
-       
-        
-      
-       
-        mediaPlayer.startRecording(atPath: documentsDirectory)
+            infoBox.isHidden = false
+        topView.addSubview(infoBox)
+        bottomContainer.isHidden = true
     }
     
     @IBAction func startVideo(_ sender: Any) {
@@ -68,6 +61,9 @@ class MainVC: UIViewController,VLCMediaPlayerDelegate {
             }
         }
     }
+    
+    
+    
     func playVideo () {
         
         
@@ -82,7 +78,7 @@ class MainVC: UIViewController,VLCMediaPlayerDelegate {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        
+        infoBox.isHidden = true
         //Playing multicast UDP (you can multicast a video from VLC)
         //let url = NSURL(string: "udp://@225.0.0.1:51018")
         //Playing HTTP from internet
@@ -143,7 +139,7 @@ class MainVC: UIViewController,VLCMediaPlayerDelegate {
         else
             
             if infoToggle == 1 {
-                
+                infoBox.isHidden = true
                 movieView.frame = UIScreen.main.bounds
            //     bottomContainer.isHidden = true
                 infoToggle = 0

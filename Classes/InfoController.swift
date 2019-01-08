@@ -12,11 +12,11 @@ class InfoController: UIViewController {
     @IBOutlet weak var imageStab: UILabel!
     @IBOutlet weak var shutter: UILabel!
     @IBOutlet weak var profile: UILabel!
-    @IBOutlet weak var moreInfo: UIButton!
+
     @IBOutlet weak var compRes: UILabel!
     @IBOutlet weak var cameraModel: UILabel!
     @IBOutlet weak var macAddress: UILabel!
-    @IBOutlet var infoView: UIView!
+    
     @IBOutlet weak var whiteBalance: UILabel!
     @IBOutlet weak var wdrLabel: UILabel!
     @IBOutlet weak var dZoomMode: UILabel!
@@ -35,51 +35,17 @@ class InfoController: UIViewController {
     @IBOutlet weak var mirrorMode: UILabel!
     @IBOutlet weak var focusLevel: UILabel!
     @IBOutlet weak var afLabel: UILabel!
-    @IBOutlet weak var viewMore: UIView!
+  
     
     @IBOutlet weak var defog: UILabel!
     
-    @IBAction func showMore(_ sender: Any) {
-        
-      self.camera.discoverIP(ip: Login.ip)
-        sensor.GetBlockSensorInput(ip: Login.ip)
-             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.imageStab.frame = CGRect(x:5, y:317, width: 400, height: 20)
-                self.imageStab.text =  "Stablization:  \(String(describing: self.sensor.imagestabilization))"
-                self.profile.frame = CGRect(x:5, y:340, width: 400, height: 20)
-                self.profile.text =  "Encoding Profile:  \(String(describing: self.camera.encoder.profile))"
-                self.shutter.frame =  CGRect(x:5, y:386, width: 400, height: 20)
-                self.shutter.text =  "Shutter:  \(String(describing: self.sensor.shutterspeed))"
-                self.exposure.frame =  CGRect(x:5, y:271, width: 400, height: 20)
-                self.exposure.text = "AE Mode:  \(String(describing: self.sensor.automaticexposure))"
-                self.bitRate.frame =  CGRect(x:5, y:363, width: 400, height: 20)
-                self.bitRate.text = "Bitrate:  \(String(describing: self.camera.encoder.bitrate))"
-                self.currentZoom.frame = CGRect(x:5, y:225, width: 400, height: 20)
-                self.currentZoom.text = "Current Zoom:  \(String(describing: self.sensor.currentzoomlevel))"
-                self.afLabel.frame = CGRect(x:5, y:294, width: 400, height: 20)
-                self.afLabel.text = "Autofocus:  \(String(describing: self.sensor.autofocus))"
-                self.focusLevel.frame = CGRect(x:5, y:248, width: 400, height: 20)
-                self.focusLevel.text = "Current Focus:  \(String(describing: self.sensor.currentfocuslevel))"
-                self.whiteBalance.frame = CGRect(x:5, y:409, width: 400, height: 20)
-                self.whiteBalance.text = "White Balance:  \(String(describing: self.sensor.whitebalance))"
-                self.defog.frame = CGRect(x:5, y:431, width: 400, height: 20)
-                self.defog.text = "Defog Mode:  \(String(describing: self.sensor.defog))"
-                self.wdrLabel.frame = CGRect(x:5, y:454, width: 400, height: 20)
-                self.wdrLabel.text = "WDR Mode:  \(String(describing: self.sensor.widedynamicrange))"
-                self.mirrorMode.frame = CGRect(x:5, y:477, width: 400, height: 20)
-                self.mirrorMode.text = "Mirror Mode:  \(String(describing: self.sensor.mirror))"
-                self.dZoomMode.frame = CGRect(x:5, y:500, width: 400, height: 20)
-                self.dZoomMode.text = "Digital Zoom:  \(String(describing: self.sensor.digitalzoomenable))"
-                
-    }
-    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-      
+
         setLabels()
         
-       
     }
     
     
@@ -108,19 +74,38 @@ class InfoController: UIViewController {
                 if let text = self.camera.encoder.resolution {
                      self.compRes.text =  "Resolution:  \(text)"
                 }
-                self.cameraModel.frame = CGRect(x:5, y:69, width: 400, height: 20)
-                self.ipLabel.frame = CGRect(x:5, y:115, width: 400, height: 20)
-                self.resolutionLabel.frame = CGRect(x:5, y:161, width: 400, height: 20)
-                self.rtspLabel.frame = CGRect(x:5, y:0, width: 400, height: 20)
-                self.portLabel.frame = CGRect(x:5, y:92, width: 400, height: 20)
-                self.modelNumber.frame = CGRect(x:5, y:23, width: 400, height: 20)
-                self.macAddress.frame = CGRect(x:5, y:46, width: 400, height: 20)
-                  self.compRes.frame = CGRect(x:5, y:138, width: 400, height: 20)
+           
+                
+                self.camera.discoverIP(ip: Login.ip)
+                self.sensor.GetBlockSensorInput(ip: Login.ip)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    self.imageStab.text =  "Stablization:  \(String(describing: self.sensor.imagestabilization))"
+                  
+                    self.profile.text =  "Encoding Profile:  \(String(describing: self.camera.encoder.profile))"
+                    
+                    self.shutter.text =  "Shutter:  \(String(describing: self.sensor.shutterspeed))"
+                 
+                    self.exposure.text = "AE Mode:  \(String(describing: self.sensor.automaticexposure))"
+                
+                    self.bitRate.text = "Bitrate:  \(String(describing: self.camera.encoder.bitrate))"
+                  
+                    self.currentZoom.text = "Current Zoom:  \(String(describing: self.sensor.currentzoomlevel))"
+                
+                    self.afLabel.text = "Autofocus:  \(String(describing: self.sensor.autofocus))"
+                    self.focusLevel.text = "Current Focus:  \(String(describing: self.sensor.currentfocuslevel))"
+                
+                    self.whiteBalance.text = "White Balance:  \(String(describing: self.sensor.whitebalance))"
+                 
+                    self.defog.text = "Defog Mode:  \(String(describing: self.sensor.defog))"
+             
+                    self.wdrLabel.text = "WDR Mode:  \(String(describing: self.sensor.widedynamicrange))"
+                   
+                    self.mirrorMode.text = "Mirror Mode:  \(String(describing: self.sensor.mirror))"
+               
+                    self.dZoomMode.text = "Digital Zoom:  \(String(describing: self.sensor.digitalzoomenable))"
+                    
+                }
         
-                self.moreInfo.layer.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                self.moreInfo.layer.cornerRadius = 5
-                self.moreInfo.setTitle("More", for: .normal)
-                self.moreInfo.frame = CGRect(x: 100, y:191, width: 60, height: 20)
        }
     }
     
